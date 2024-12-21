@@ -1,4 +1,4 @@
-# Online Shopping Website
+# Online Shopping Website(MyShop)
 
 This is an online shopping website built using React and Tailwind CSS. The application allows users to browse products, add items to their cart, and complete purchases seamlessly. It is designed to provide an intuitive user experience while showcasing modern web development practices.
 
