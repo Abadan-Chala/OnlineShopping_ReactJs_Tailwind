@@ -69,14 +69,14 @@ const Navbar = () => {
       </div>
       {/* lower navbar */}
       <div className='flex justify-center'>
-        <ul className='sm:flex hidden items-center'>
+        <ul className='sm:flex hidden items-center gap-4'>
             {
               Menu.map((data) =>(
                 <li key={data.id}>
                     <a href={data.link}
                     className='inline-block px-4 hover:text-primary duration-200'
                     >
-                        {data.item}
+                        {data.name}
                         </a>
                 </li>
               ))  
