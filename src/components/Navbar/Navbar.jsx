@@ -53,14 +53,12 @@ const DropdownLinks = [
 
 const Navbar = ({handleOrderPopup}) => {
   return (
-    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
+    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 z-40  fixed top-0 left-0 w-full'>
         {/* upper navbar */}
       <div className='bg-primary/40 py-2'>
         <div className='container flex justify-between items-center'>
             <div>
-                <a href="#" className='font-bold text-2xl sm:text-3xl flex gap-2'>
-                    <img src={logo} alt="logo" 
-                    className='w-10'/>
+                <a href="#" className='border text-white rounded-full text-2xl font-bold bg-yellow-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-yellow-800'> 
                     MyShop
                 </a>
             </div>
@@ -92,7 +90,7 @@ const Navbar = ({handleOrderPopup}) => {
         </div>
       </div>
       {/* lower navbar */}
-      <div className='flex justify-center'>
+      <div data-aos="zoom-in" className='flex justify-center'>
         <ul className='sm:flex hidden items-center gap-4'>
             {
               Menu.map((data) =>(
