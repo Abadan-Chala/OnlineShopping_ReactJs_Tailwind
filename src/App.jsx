@@ -44,7 +44,6 @@ const App = () => {
           <Route path="/top-products" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
           <Route path ="/signup" element={<SignUp/>}></Route>
           <Route path ="/login" element={<Login/>}></Route>
-
         </Routes>
         <Products/>
         <TopProducts handleOrderPopup={handleOrderPopup}/>
