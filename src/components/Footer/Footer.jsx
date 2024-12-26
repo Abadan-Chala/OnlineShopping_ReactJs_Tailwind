@@ -35,7 +35,7 @@ const FooterLinks = [
 ]
 const Footer = () => {
   return (
-    <div style={BannerImg} className='text-white mb-20'>
+    <div style={BannerImg} className='text-white mt-20'>
       <div className='container'>
         <div 
         data-aos="zoom-in"
@@ -115,8 +115,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <hr /> <hr /> <hr />
         </div>
-
       </div>
     </div>
   );

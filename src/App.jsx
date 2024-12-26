@@ -13,6 +13,8 @@ import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import Popup from './components/Popup/Popup';
 import Womens from './components/Pages/Womens';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -40,6 +42,9 @@ const App = () => {
           <Route path="/top-rated" element={<TopRated />} />
           <Route path="/womens" element={<Womens />} />
           <Route path="/top-products" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
+          <Route path ="/signup" element={<SignUp/>}></Route>
+          <Route path ="/login" element={<Login/>}></Route>
+
         </Routes>
         <Products/>
         <TopProducts handleOrderPopup={handleOrderPopup}/>
