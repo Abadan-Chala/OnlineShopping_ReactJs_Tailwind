@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router and Routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
-import TopRated from './components/Pages/TopRated'; // Import TopRated component
+import TopRated from './components/Pages/TopRated';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopProducts from './components/TopProducts/TopProducts';
@@ -39,9 +39,7 @@ const App = () => {
           <Route path="/" element={<Hero handleOrderPopup={handleOrderPopup} />} />
           <Route path="/top-rated" element={<TopRated />} />
           <Route path="/womens" element={<Womens />} />
-          <Route path="/products" element={<Products />} />
           <Route path="/top-products" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
-          {/* Add other routes as needed */}
         </Routes>
         <Products/>
         <TopProducts handleOrderPopup={handleOrderPopup}/>

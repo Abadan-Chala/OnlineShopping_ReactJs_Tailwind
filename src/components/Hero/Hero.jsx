@@ -103,6 +103,8 @@ const Hero = ({handleOrderPopup}) => {
 
       </div>
     </div>
+
+    
   );
 }
 

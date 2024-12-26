@@ -8,17 +8,17 @@ const Menu = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "Top Rated", link: "/top-rated" },
     { id: 3, name: "Womens Wear", link: "/womens" },
-    { id: 4, name: "Mens Wear", link: "/#" },
-    { id: 5, name: "Kids Wear", link: "/#" },
-    { id: 6, name: "Brand Shoes", link: "/#" },
-    { id: 7, name: "Jewellery", link: "/#" },
+    { id: 4, name: "Mens Wear", link: "/mens" },
+    { id: 5, name: "Kids Wear", link: "/kids" },
+    { id: 6, name: "Brand Shoes", link: "/shoes" },
+    { id: 7, name: "Jewellery", link: "/jewellery" },
 ];
 
 const DropdownLinks = [
-    { id: 1, name: 'Smart Phones', link: '/#' },
-    { id: 2, name: 'Laptops', link: '/#' },
-    { id: 3, name: 'Tablets', link: '/#' },
-    { id: 4, name: 'Smart Watches', link: '/#' },
+    { id: 1, name: 'Smart Phones', link: '/phones' },
+    { id: 2, name: 'Laptops', link: '/laptops' },
+    { id: 3, name: 'Tablets', link: '/tablets' },
+    { id: 4, name: 'Smart Watches', link: '/watches' },
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
@@ -53,6 +53,10 @@ const Navbar = ({ handleOrderPopup }) => {
           {/* Darkmode switch */}
           <div>
             <DarkMode/>
+          </div>
+          <div>
+          <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-green-400 hover:bg-green-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
+          <Link to="/login" className="rounded-full py-2 px-6 border bg-blue-300 hover:bg-blue-400 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
           </div>
         </div>
       </div>
