@@ -1,129 +1,92 @@
 import React from 'react';
-import logo from "../../assets/logo.jpg"
+import { Link } from 'react-router-dom';
 import { IoMdSearch } from 'react-icons/io';
 import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
 import DarkMode from './DarkMode';
+
 const Menu = [
-    {
-        id:1,
-        name: "Home",
-        link: "/#",
-    },
-    {
-        id:2,
-        name: "Top Rated",
-        link: "/#services",
-    },
-    {
-        id:3,
-        name: "Kids Wear",
-        link: "/#",
-    },
-    {
-        id:4,
-        name: "Mens Wear",
-        link: "/#",
-    },
-    {
-        id:5,
-        name: "Electronics",
-        link: "/#",
-    },
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "Top Rated", link: "/top-rated" },
+    { id: 3, name: "Womens Wear", link: "/womens" },
+    { id: 4, name: "Mens Wear", link: "/#" },
+    { id: 5, name: "Kids Wear", link: "/#" },
+    { id: 6, name: "Brand Shoes", link: "/#" },
+    { id: 7, name: "Jewellery", link: "/#" },
 ];
 
 const DropdownLinks = [
-    {
-        id:1,
-        name: 'Trending Products',
-        link: '/#'
-    },
-    {
-        id:2,
-        name: 'Best Selling',
-        link: '/#'
-    },
-    {
-        id:3,
-        name: 'Top Rated',
-        link: '/#'
-    },
+    { id: 1, name: 'Smart Phones', link: '/#' },
+    { id: 2, name: 'Laptops', link: '/#' },
+    { id: 3, name: 'Tablets', link: '/#' },
+    { id: 4, name: 'Smart Watches', link: '/#' },
 ];
 
-const Navbar = ({handleOrderPopup}) => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
-    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 z-40  fixed top-0 left-0 w-full'>
-        {/* upper navbar */}
+    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 z-40 fixed top-0 left-0 w-full'>
+      {/* upper navbar */}
       <div className='bg-primary/40 py-2'>
         <div className='container flex justify-between items-center'>
-            <div>
-                <a href="#" className='border text-white rounded-full text-2xl font-bold bg-yellow-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-yellow-800'> 
-                    MyShop
-                </a>
+          <div>
+            <Link to="/" className='border text-white rounded-full text-2xl font-bold bg-yellow-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-yellow-800'> 
+              MyShop
+            </Link>
+          </div>
+          {/* search bar */}
+          <div className='flex justify-between items-center gap-4'>
+            <div className='relative group hidden sm:block'>
+              <input 
+                type="text" 
+                placeholder='Search'
+                className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-500' 
+              />
+              <IoMdSearch className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3 cursor-pointer'/>
             </div>
+          </div>
 
-            {/* search bar */}
-            <div className='flex justify-between items-center gap-4'>
-                <div className='relative group hidden sm:block'>
-                    <input 
-                    type="text" 
-                    placeholder='Search'
-                    className='w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-primary dark:border-gray-500 dark:bg-gray-500' />
-                    <IoMdSearch className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3 cursor-pointer'/>
-                </div>
-            </div>
+          {/* order button */}
+          <button onClick={() => handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
+            <span className='group-hover:block hidden transition-all duration-200'>Order</span>
+            <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
+          </button>
 
-            {/* order button */}
-            <button onClick={()=> handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
-                <span
-                className='group-hover:block hidden transition-all duration-200'>
-                    Order
-                </span>
-                <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
-            </button>
-
-            {/* Darkmode switch */}
-            <div>
-                <DarkMode/>
-            </div>
+          {/* Darkmode switch */}
+          <div>
+            <DarkMode/>
+          </div>
         </div>
       </div>
       {/* lower navbar */}
       <div data-aos="zoom-in" className='flex justify-center'>
         <ul className='sm:flex hidden items-center gap-4'>
-            {
-              Menu.map((data) =>(
-                <li key={data.id}>
-                    <a href={data.link}
-                    className='inline-block px-4 hover:text-primary duration-200'
-                    >
-                        {data.name}
-                        </a>
-                </li>
-              ))  
-            }
-            {/* dropdown links */}
-            <li className='group relative cursor-pointer'>
-                <a href="#"
-                className='flex items-center gap-[2px] py-2'>
-                    Trending
-                    <span>
-                        <FaCaretDown
-                        className='transition-all duration-200 group-hover:rotate-180'/>
-                    </span>
-                </a>
-                <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
-                    <ul>
-                        {DropdownLinks.map((data)=>(
-                            <li key={data.id}>
-                                <a href={data.link}
-                                className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>
-                                    {data.name}
-                                    </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+          {Menu.map((data) => (
+            <li key={data.id}>
+              <Link to={data.link} className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200'>
+                {data.name}
+              </Link>
             </li>
+          ))}
+          {/* dropdown links */}
+          <li className='group relative cursor-pointer'>
+            <Link to="#" className='flex items-center gap-[2px] py-2 hover:text-primary rounded-full'>
+              Electronics
+              <span>
+                <FaCaretDown className='transition-all duration-200 group-hover:rotate-180'/>
+              </span>
+            </Link>
+            <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
+              <ul>
+                {DropdownLinks.map((data) => (
+                  <li key={data.id}>
+                    <Link to={data.link} className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>
+                      {data.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+          <button className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200'>About</button>
         </ul>
       </div>
     </div>

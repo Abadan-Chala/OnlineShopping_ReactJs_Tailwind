@@ -1,7 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router and Routes
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
+import TopRated from './components/Pages/TopRated'; // Import TopRated component
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TopProducts from './components/TopProducts/TopProducts';
@@ -10,14 +12,16 @@ import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import Popup from './components/Popup/Popup';
+import Womens from './components/Pages/Womens';
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
 
   const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup)
+    setOrderPopup(!orderPopup);
   };
-  React.useEffect(() =>{
+
+  React.useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
@@ -26,20 +30,29 @@ const App = () => {
     });
     AOS.refresh();
   }, []);
+
   return (
-    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
-      <Navbar handleOrderPopup={handleOrderPopup}/>
-      <Hero handleOrderPopup={handleOrderPopup}/>
-      <Products/>
-      <TopProducts handleOrderPopup={handleOrderPopup}/>
-      <Banner/>
-      <Subscribe/>
-      <Products/>
-      <Testimonials/>
-      <Footer/>
-      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup}/>
-    </div>
+    <Router>
+      <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
+        <Navbar handleOrderPopup={handleOrderPopup} />
+        <Routes>
+          <Route path="/" element={<Hero handleOrderPopup={handleOrderPopup} />} />
+          <Route path="/top-rated" element={<TopRated />} />
+          <Route path="/womens" element={<Womens />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/top-products" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
+          {/* Add other routes as needed */}
+        </Routes>
+        <Products/>
+        <TopProducts handleOrderPopup={handleOrderPopup}/>
+        <Banner />
+        <Subscribe />
+        <Testimonials />
+        <Footer />
+        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
