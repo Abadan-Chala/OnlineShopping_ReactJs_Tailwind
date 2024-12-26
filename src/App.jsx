@@ -48,8 +48,8 @@ const App = () => {
         <Products/>
         <TopProducts handleOrderPopup={handleOrderPopup}/>
         <Banner />
-        <Subscribe />
         <Testimonials />
+        <Subscribe />
         <Footer />
         <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
