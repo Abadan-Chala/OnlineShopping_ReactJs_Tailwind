@@ -100,7 +100,6 @@ const Hero = ({handleOrderPopup}) => {
             </div>
              ))}
         </Slider>
-
       </div>
     </div>
 

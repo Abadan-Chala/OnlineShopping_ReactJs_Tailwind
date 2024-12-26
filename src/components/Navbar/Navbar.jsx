@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdSearch } from 'react-icons/io';
 import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
@@ -22,6 +22,16 @@ const DropdownLinks = [
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setDropdownOpen(false); // Hide dropdown on link click
+  };
+
   return (
     <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 z-40 fixed top-0 left-0 w-full'>
       {/* upper navbar */}
@@ -55,8 +65,8 @@ const Navbar = ({ handleOrderPopup }) => {
             <DarkMode/>
           </div>
           <div>
-          <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-green-400 hover:bg-green-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
-          <Link to="/login" className="rounded-full py-2 px-6 border bg-blue-300 hover:bg-blue-400 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
+            <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-green-400 hover:bg-green-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
+            <Link to="/login" className="rounded-full py-2 px-6 border bg-blue-300 hover:bg-blue-400 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
           </div>
         </div>
       </div>
@@ -72,23 +82,25 @@ const Navbar = ({ handleOrderPopup }) => {
           ))}
           {/* dropdown links */}
           <li className='group relative cursor-pointer'>
-            <Link to="#" className='flex items-center gap-[2px] py-2 hover:text-primary rounded-full'>
+            <div onClick={toggleDropdown} className='flex items-center gap-[2px] py-2 hover:text-primary rounded-full'>
               Electronics
               <span>
-                <FaCaretDown className='transition-all duration-200 group-hover:rotate-180'/>
+                <FaCaretDown className={`transition-all duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
               </span>
-            </Link>
-            <div className='absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
-              <ul>
-                {DropdownLinks.map((data) => (
-                  <li key={data.id}>
-                    <Link to={data.link} className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>
-                      {data.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
+            {dropdownOpen && ( // Only show dropdown if open
+              <div className='absolute z-[9999] w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
+                <ul>
+                  {DropdownLinks.map((data) => (
+                    <li key={data.id}>
+                      <Link to={data.link} className='inline-block w-full rounded-md p-2 hover:bg-primary/20' onClick={handleLinkClick}>
+                        {data.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </li>
           <button className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200'>About</button>
         </ul>
