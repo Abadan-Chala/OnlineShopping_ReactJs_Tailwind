@@ -22,6 +22,7 @@ import Jewellery from './components/Pages/Jewellery';
 import Phones from './components/Pages/Electronics/Phones';
 import Laptops from './components/Pages/Electronics/Laptops';
 import Tablets from './components/Pages/Electronics/Tablets';
+import Watches from './components/Pages/Electronics/Watches';
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/phones" element={<Phones/>} />
           <Route path="/laptops" element={<Laptops/>} />
           <Route path="/tablets" element={<Tablets/>} />
+          <Route path="/watches" element={<Watches/>} />
           <Route path="/top-products" element={<TopProducts handleOrderPopup={handleOrderPopup} />} />
           <Route path ="/signup" element={<SignUp/>}></Route>
           <Route path ="/login" element={<Login/>}></Route>

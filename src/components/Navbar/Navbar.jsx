@@ -102,7 +102,8 @@ const Navbar = ({ handleOrderPopup }) => {
               </div>
             )}
           </li>
-          <button className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200'>About</button>
+
+          <Link to="/about" className="inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200">About</Link>
         </ul>
       </div>
     </div>
