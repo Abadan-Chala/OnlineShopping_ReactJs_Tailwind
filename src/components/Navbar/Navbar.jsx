@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdSearch } from 'react-icons/io';
 import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
@@ -22,15 +22,29 @@ const DropdownLinks = [
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State to manage dropdown visibility
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
   const handleLinkClick = () => {
-    setDropdownOpen(false); // Hide dropdown on link click
+    setDropdownOpen(false);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 z-40 fixed top-0 left-0 w-full'>
@@ -81,14 +95,14 @@ const Navbar = ({ handleOrderPopup }) => {
             </li>
           ))}
           {/* dropdown links */}
-          <li className='group relative cursor-pointer'>
+          <li className='group relative cursor-pointer' ref={dropdownRef}>
             <div onClick={toggleDropdown} className='flex items-center gap-[2px] py-2 hover:text-primary rounded-full'>
               Electronics
               <span>
                 <FaCaretDown className={`transition-all duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
               </span>
             </div>
-            {dropdownOpen && ( // Only show dropdown if open
+            {dropdownOpen && ( 
               <div className='absolute z-[9999] w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
                 <ul>
                   {DropdownLinks.map((data) => (
