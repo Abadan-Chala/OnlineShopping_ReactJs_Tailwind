@@ -31,6 +31,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
   const handleLinkClick = () => {
     setDropdownOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleClickOutside = (event) => {
@@ -52,7 +53,7 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className='bg-primary/40 py-2'>
         <div className='container flex justify-between items-center'>
           <div>
-            <Link to="/" className='border text-white rounded-full text-2xl font-bold bg-yellow-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-yellow-800'> 
+            <Link to="/" className='border text-white rounded-full text-2xl font-bold bg-yellow-900 hover:bg-black transform transition px-2 py-1 duration-300 hover:scale-105 hover:text-yellow-800' onClick={handleLinkClick}> 
               MyShop
             </Link>
           </div>
@@ -89,7 +90,7 @@ const Navbar = ({ handleOrderPopup }) => {
         <ul className='sm:flex hidden items-center gap-4'>
           {Menu.map((data) => (
             <li key={data.id}>
-              <Link to={data.link} className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200'>
+              <Link to={data.link} className='inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200' onClick={handleLinkClick}>
                 {data.name}
               </Link>
             </li>
@@ -117,7 +118,7 @@ const Navbar = ({ handleOrderPopup }) => {
             )}
           </li>
 
-          <Link to="/about" className="inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200">About</Link>
+          <Link to="/about" className="inline-block px-4 hover: transform transition py-1 hover:scale-105 hover:text-primary duration-200" onClick={handleLinkClick}>About</Link>
         </ul>
       </div>
     </div>
