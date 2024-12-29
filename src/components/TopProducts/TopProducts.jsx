@@ -13,35 +13,35 @@ const ProductsData = [
     id:1,
     img: Top1,
     title:"trousers",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Full Sleeves",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"familier wear",
+    description: "those are the top rated products in the market with the best quality and comfort."
 
   },
   {
     id:4,
     img: Top4,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"T-Shirts and sweaters",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:5,
     img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Outfits",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
 ]
@@ -78,7 +78,7 @@ const TopProducts = ({handleOrderPopup}) => {
                 <h1 className='text-xl font-bold'>{data.title}</h1>
                 <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
                 <button
-                  className='bg-primary hover:scale-105 duration-300 text-white py-1 py-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
+                  className='bg-primary hover:scale-105 duration-300 text-white py-1 px-2 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
                   onClick={handleOrderPopup}
                   >
                     Order Now
