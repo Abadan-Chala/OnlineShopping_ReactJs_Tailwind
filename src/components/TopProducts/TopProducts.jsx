@@ -1,9 +1,9 @@
 import React from 'react';
 import Top1 from '../../assets/prod5.jpg';
-import Top2 from '../../assets/prod5.jpg';
-import Top3 from '../../assets/prod5.jpg';
-import Top4 from '../../assets/prod5.jpg';
-import Top5 from '../../assets/prod5.jpg';
+import Top2 from '../../assets/hero3.png';
+import Top3 from '../../assets/hero1.jpg';
+import Top4 from '../../assets/prod1.png';
+import Top5 from '../../assets/hero4.jpg';
 import { FaStar } from 'react-icons/fa6';
 
 
@@ -12,7 +12,7 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
+    title:"trousers",
     description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
 
   },
@@ -51,10 +51,10 @@ const TopProducts = ({handleOrderPopup}) => {
     <div>
       <div className='container'>
         {/* header Section */}
-        <div className='text-left mb-24'>
+        <div className='text-center mb-24'>
             <p data-aos="fade-up" className='text-sm text-primary'>Top Rated Products</p>
-            <h1 data-aos="fade-up" className='text-3xl font-bold'>Best Products</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis tempore, assumenda sed officiis inventore eveniet quisquam mollitia quis temporibus, doloribus natus. Aliquid natus ullam, delectus aperiam sint aut facere.</p>
+            <h1 data-aos="fade-up" className='text-3xl font-bold'>Best Sold Products</h1>
+            <p data-aos="fade-up" className='text-xs text-gray-400'>This product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear. this product is the best product in the market which is very comfortable and stylish to wear.</p>
         </div>
         {/* body Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
@@ -69,7 +69,7 @@ const TopProducts = ({handleOrderPopup}) => {
               {/* details section */}
               <div className='p-4 text-center'>
                 {/* star rating */}
-                <div className='w-full flex items-center justify-center gap-1'>
+                <div className='w-full flex items-center justify-center gap-1 mt-5'>
                   <FaStar className='text-yellow-500'/>
                   <FaStar className='text-yellow-500'/>
                   <FaStar className='text-yellow-500'/>
