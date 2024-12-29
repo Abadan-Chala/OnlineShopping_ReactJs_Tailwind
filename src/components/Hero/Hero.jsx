@@ -36,10 +36,16 @@ const ImageList = [
 const Hero = ({ handleOrderPopup }) => {
     const [orderCount, setOrderCount] = useState(0);
     const [orderPopup, setOrderPopup] = useState(false);
+    const [formShown, setFormShown] = useState(false);
 
     const handleOrderClick = () => {
         setOrderCount(orderCount + 1);
-        setOrderPopup(true);
+        if (!formShown) {
+            setOrderPopup(true);
+            setFormShown(true);
+        } else {
+            alert(`You ordered ${orderCount + 1} product(s)`);
+        }
     };
 
     var settings = {

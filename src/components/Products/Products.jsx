@@ -10,17 +10,17 @@ const ProductsData = [
     {
         id:1,
         img: prod1,
-        title: "Women Ethnic",
+        title: "Cold wear",
         rating: 5.0,
-        author: "white",
+        author: "myshop",
         aosDelay: "0",
     },
     {
         id:2,
         img: prod2,
-        title: "Women Ethnic",
+        title: "Women wear",
         rating: 5.0,
-        author: "white",
+        author: "myshop",
         aosDelay: "0",
     },
     {
@@ -28,23 +28,23 @@ const ProductsData = [
         img: prod3,
         title: "Women Ethnic",
         rating: 5.0,
-        author: "white",
+        author: "myshop",
         aosDelay: "0",
     },
     {
         id:4,
         img: prod4,
-        title: "Women Ethnic",
+        title: "trendy wear",
         rating: 5.0,
-        author: "white",
+        author: "myshop",
         aosDelay: "0",
     },
     {
         id:5,
         img: prod5,
-        title: "Women Ethnic",
+        title: "trausers",
         rating: 5.0,
-        author: "white",
+        author: "myshop",
         aosDelay: "0",
     },
 ]
@@ -57,7 +57,8 @@ const Products = () => {
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
             <p data-aos="fade-up" className='text-sm text-primary'>Top Selling Products</p>
             <h1 data-aos="fade-up" className='text-3xl font-bold'>Products</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis tempore, assumenda sed officiis inventore eveniet quisquam mollitia quis temporibus, doloribus natus. Aliquid natus ullam, delectus aperiam sint aut facere.</p>
+            <p data-aos="fade-up" className='text-xs text-gray-400'>Those are top selling products in our store. Check out the best deals and offers on these items.We offer a wide range of products to suit your needs. From trendy wear to ethnic clothing, our collection is curated to provide you with the best quality and style. Don't miss out on our exclusive offers and discounts available for a limited time.</p>
+        
         </div>
         {/* Body Sections */}
          <div>
@@ -88,7 +89,7 @@ const Products = () => {
                 {/* view all buttons */}
                 <div className='flex justify-center'>
                     <button className='text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md'>
-                        View All Button
+                        View All
                     </button>
                 </div>
           </div>
