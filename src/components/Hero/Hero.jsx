@@ -4,32 +4,31 @@ import hero2 from '../../assets/hero2.jpg';
 import hero3 from '../../assets/hero3.png';
 import hero4 from '../../assets/hero4.jpg';
 import Slider from 'react-slick';
-import { data } from 'autoprefixer';
 
 const ImageList = [
     {
         id:1,
         img: hero1,
-        title: "50% off on all Men's Wear",
-        description: "this is mens qweae afj riu xan ger ri 30  off  kanaafuu atisa tii naf rbaajferdsa lfdfljrfjalmvfnrfghvs kdnekfkanaan vftacxhrr zsfkl; d;ta",
+        title: "50% off on all Kids Wear",
+        description: "You can get 50% off on all kids wear. click the button below to order now, hurry up offer is limited",
     },
     {
         id:2,
         img: hero2,
-        title: "50% off on all Men's Wear",
-        description: "this is mens qweae afj riu xan ger ri 30  off  kanaafuu atisa tii naf rbaajferdsa lfdfljrfjalmvfnrfghvs kdnekfkanaan vftacxhrr zsfkl; d;ta",
+        title: "50% off on all Womens Wear",
+        description: "You can get 50% off on all womens wears here. click the button below to order now, hurry up offer is limited. and also get free shipping",
     },
     {
         id:3,
         img: hero3,
         title: "50% off on all Men's Wear",
-        description: "this is mens qweae afj riu xan ger ri 30  off  kanaafuu atisa tii naf rbaajferdsa lfdfljrfjalmvfnrfghvs kdnekfkanaan vftacxhrr zsfkl; d;ta",
+        description: "This is mens wear. You can get 50% off on all mens wear. click the button below to order now, hurry up offer is limited",
     },
     {
         id:4,
         img: hero4,
         title: "50% off on all Men's Wear",
-        description: "this is mens qweae afj riu xan ger ri 30  off  kanaafuu atisa tii naf rbaajferdsa lfdfljrfjalmvfnrfghvs kdnekfkanaan vftacxhrr zsfkl; d;ta",
+        description: "this is mens wear. You can get 50% off on all mens wear. click the button below to order now, hurry up offer is limited",
     },
 ]
 
