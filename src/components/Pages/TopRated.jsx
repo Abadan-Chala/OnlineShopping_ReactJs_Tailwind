@@ -1,9 +1,9 @@
 import React from 'react';
 import Top1 from '../../assets/prod5.jpg';
-import Top2 from '../../assets/prod5.jpg';
-import Top3 from '../../assets/prod5.jpg';
-import Top4 from '../../assets/prod5.jpg';
-import Top5 from '../../assets/prod5.jpg';
+import Top2 from '../../assets/prod3.jpg';
+import Top3 from '../../assets/prod2.jpg';
+import Top4 from '../../assets/prod4.png';
+import Top5 from '../../assets/prod1.png';
 import { FaStar } from 'react-icons/fa6';
 
 
@@ -12,43 +12,43 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Mens Wear",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"females Wear",
+    description: "female wear is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"family Wear",
+    description: "family wear is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:4,
     img: Top4,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"cold wear",
+    description: "cold wear is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:5,
     img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"T-shirts",
+    description: "T-shirts is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:6,
     img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Sweters",
+    description: "sweters is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
 ]
@@ -61,7 +61,7 @@ const TopRated = ({handleOrderPopup}) => {
         <div className='text-center mt-28 mb-10'>
             <p data-aos="fade-up" className='text-sm text-primary'>Top Rated Products</p>
             <h1 data-aos="fade-up" className='text-3xl font-bold'>Best Products</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis tempore, assumenda sed officiis inventore eveniet quisquam mollitia quis temporibus, doloribus natus. Aliquid natus ullam, delectus aperiam sint aut facere.</p>
+            <p data-aos="fade-up" className='text-xs text-gray-400'>Those are the best products available in our shop.</p>
         </div>
         {/* body Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
@@ -71,7 +71,7 @@ const TopRated = ({handleOrderPopup}) => {
               <div className='h-[100px]'>
                 <img src={data.img} alt="" 
                 data-aos="zoom-in"
-                className='max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md'/>
+                className='max-w-[120px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md'/>
               </div>
               {/* details section */}
               <div className='p-4 text-center'>
