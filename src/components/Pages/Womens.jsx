@@ -4,7 +4,6 @@ import Top1 from '../../assets/women1.jpg';
 import Top2 from '../../assets/women2.jpg';
 import Top3 from '../../assets/women3.jpg';
 import Top4 from '../../assets/women4.jpg';
-import Top5 from '../../assets/prod5.jpg';
 import { FaStar } from 'react-icons/fa6';
 
 const ProductsData = [
@@ -32,18 +31,7 @@ const ProductsData = [
     title: "hijab Wear",
     description: "muslim wear is the top rated product in the market which is very comfortable and stylish to wear."
   },
-  // {
-  //   id: 5,
-  //   img: Top5,
-  //   title: "Casual Wear",
-  //   description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
-  // },
-  // {
-  //   id: 6,
-  //   img: Top5,
-  //   title: "Casual Wear",
-  //   description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
-  // },
+
 ];
 
 const Womens = () => {

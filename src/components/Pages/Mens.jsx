@@ -1,9 +1,9 @@
 import React from 'react';
 import Top1 from '../../assets/prod5.jpg';
-import Top2 from '../../assets/prod5.jpg';
-import Top3 from '../../assets/prod5.jpg';
-import Top4 from '../../assets/prod5.jpg';
-import Top5 from '../../assets/prod5.jpg';
+import Top2 from '../../assets/male3.jpg';
+import Top3 from '../../assets/male2.jpg';
+import Top4 from '../../assets/male4.jpg';
+import Top5 from '../../assets/male1.jpg';
 import { FaStar } from 'react-icons/fa6';
 
 
@@ -12,43 +12,43 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"trouser",
+    description: "this trouser is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"outfit",
+    description: "this outfit is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"for marriage",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:4,
     img: Top4,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"standard Wear",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:5,
     img: Top5,
     title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:6,
     img: Top5,
     title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
 ]
