@@ -1,8 +1,8 @@
 import React from 'react';
-import Top1 from '../../assets/prod5.jpg';
-import Top2 from '../../assets/prod5.jpg';
-import Top3 from '../../assets/prod5.jpg';
-import Top4 from '../../assets/prod5.jpg';
+import Top1 from '../../assets/kid1.jpg';
+import Top2 from '../../assets/kid2.jpg';
+import Top3 from '../../assets/kid3.jpg';
+import Top4 from '../../assets/kid4.jpg';
 import Top5 from '../../assets/prod5.jpg';
 import { FaStar } from 'react-icons/fa6';
 
