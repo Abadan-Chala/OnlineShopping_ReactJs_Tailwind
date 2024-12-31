@@ -57,7 +57,7 @@ const Kids = ({handleOrderPopup}) => {
   return (
     <div>
       <div className='container'>
-        /* header Section */}
+        {/* header Section */}
           <div className='text-center mt-28 mb-10'>
               <p data-aos="fade-up" className='text-sm text-primary'>Wear</p>
               <h1 data-aos="fade-up" className='text-3xl font-bold'>Kids Wear</h1>
@@ -85,7 +85,7 @@ const Kids = ({handleOrderPopup}) => {
                 <h1 className='text-xl font-bold'>{data.title}</h1>
                 <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
                 <button
-                  className='bg-primary hover:scale-105 duration-300 text-white py-1 py-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
+                  className='bg-primary hover:scale-105 duration-300 text-white py-1 px-2 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
                   onClick={handleOrderPopup}
                   >
                     Order Now
