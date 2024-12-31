@@ -12,29 +12,29 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Kids Wear",
+    description: "This is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"girls Wear",
+    description: "this is girls wear is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"christmas Wear",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:4,
     img: Top4,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"fastival Wear",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
@@ -57,13 +57,13 @@ const Kids = ({handleOrderPopup}) => {
   return (
     <div>
       <div className='container'>
-        {/* header Section */}
-        <div className='text-center mt-28 mb-10'>
-            <p data-aos="fade-up" className='text-sm text-primary'>Wear</p>
-            <h1 data-aos="fade-up" className='text-3xl font-bold'>Kids Wear</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis tempore, assumenda sed officiis inventore eveniet quisquam mollitia quis temporibus, doloribus natus. Aliquid natus ullam, delectus aperiam sint aut facere.</p>
-        </div>
-        {/* body Section */}
+        /* header Section */}
+          <div className='text-center mt-28 mb-10'>
+              <p data-aos="fade-up" className='text-sm text-primary'>Wear</p>
+              <h1 data-aos="fade-up" className='text-3xl font-bold'>Kids Wear</h1>
+              <p data-aos="fade-up" className='text-xs text-gray-400'>Discover our range of kids wear that combines comfort, style, and durability. Perfect for any occasion, our collection ensures your little ones look their best while feeling great.</p>
+          </div>
+          {/* body Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
           {ProductsData.map((data) =>(
             <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]'>
