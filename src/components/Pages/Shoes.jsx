@@ -1,8 +1,8 @@
 import React from 'react';
-import Top1 from '../../assets/prod5.jpg';
-import Top2 from '../../assets/prod5.jpg';
-import Top3 from '../../assets/prod5.jpg';
-import Top4 from '../../assets/prod5.jpg';
+import Top1 from '../../assets/shoe1.jpg';
+import Top2 from '../../assets/shoe2.jpg';
+import Top3 from '../../assets/shoe3.jpg';
+import Top4 from '../../assets/shoe4.jpg';
 import Top5 from '../../assets/prod5.jpg';
 import { FaStar } from 'react-icons/fa6';
 
@@ -12,22 +12,22 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"brand shoes",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"fashion shoes",
+    description: "this is fashion shoes is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"skin shoes",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
@@ -37,20 +37,20 @@ const ProductsData = [
     description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
 
   },
-  {
-    id:5,
-    img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+  // {
+  //   id:5,
+  //   img: Top5,
+  //   title:"Casual Wear",
+  //   description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
 
-  },
-  {
-    id:6,
-    img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+  // },
+  // {
+  //   id:6,
+  //   img: Top5,
+  //   title:"Casual Wear",
+  //   description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
 
-  },
+  // },
 ]
 
 const Shoes = ({handleOrderPopup}) => {
