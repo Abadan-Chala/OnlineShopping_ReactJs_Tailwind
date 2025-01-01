@@ -80,8 +80,8 @@ const Navbar = ({ handleOrderPopup }) => {
             <DarkMode/>
           </div>
           <div>
-            <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-green-400 hover:bg-green-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
-            <Link to="/login" className="rounded-full py-2 px-6 border bg-blue-300 hover:bg-blue-400 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
+            <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-yellow-800 hover:bg-yellow-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
+            <Link to="/login" className="rounded-full py-2 px-6 border bg-yellow-800 hover:bg-yellow-600 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
           </div>
         </div>
       </div>
