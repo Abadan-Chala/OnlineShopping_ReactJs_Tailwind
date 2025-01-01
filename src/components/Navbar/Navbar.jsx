@@ -69,16 +69,17 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
           </div>
 
-          {/* order button */}
-          <button onClick={() => handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
-            <span className='group-hover:block hidden transition-all duration-200'>Order</span>
-            <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
-          </button>
+          
 
           {/* Darkmode switch */}
           <div>
             <DarkMode/>
           </div>
+          {/* order button */}
+          <button onClick={() => handleOrderPopup()} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
+            <span className='group-hover:block hidden transition-all duration-200'>Order</span>
+            <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
+          </button>
           <div>
             <Link to="/signup" className="rounded-full py-2 px-6 ml-8 border bg-yellow-800 hover:bg-yellow-600 hover:text-white transform transition duration-300 hover:scale-105">Sign Up</Link>
             <Link to="/login" className="rounded-full py-2 px-6 border bg-yellow-800 hover:bg-yellow-600 hover:text-white transform transition duration-300 hover:scale-105">Login</Link>
