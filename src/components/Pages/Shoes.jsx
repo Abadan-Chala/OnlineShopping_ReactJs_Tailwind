@@ -60,8 +60,9 @@ const Shoes = ({handleOrderPopup}) => {
         {/* header Section */}
         <div className='text-center mt-28 mb-10'>
             <p data-aos="fade-up" className='text-sm text-primary'>Shoes</p>
-            <h1 data-aos="fade-up" className='text-3xl font-bold'>Brand Shoes</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nobis tempore, assumenda sed officiis inventore eveniet quisquam mollitia quis temporibus, doloribus natus. Aliquid natus ullam, delectus aperiam sint aut facere.</p>
+            <h1 data-aos="fade-up" className='text-3xl font-bold mb-4'>Brand Shoes</h1>
+            <p data-aos="fade-up" className='text-xs text-gray-400'>This is the best collection of brand shoes available in the market. Explore our wide range of stylish and comfortable shoes that suit every occasion. </p>
+        
         </div>
         {/* body Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
@@ -85,7 +86,7 @@ const Shoes = ({handleOrderPopup}) => {
                 <h1 className='text-xl font-bold'>{data.title}</h1>
                 <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
                 <button
-                  className='bg-primary hover:scale-105 duration-300 text-white py-1 py-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
+                  className='bg-primary hover:scale-105 duration-300 text-white py-1 px-2 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
                   onClick={handleOrderPopup}
                   >
                     Order Now
