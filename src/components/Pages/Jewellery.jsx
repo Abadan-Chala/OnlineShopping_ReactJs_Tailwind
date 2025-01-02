@@ -12,43 +12,43 @@ const ProductsData = [
   {
     id:1,
     img: Top1,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"ring",
+    description: "This ring is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:2,
     img: Top2,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Female jewellery",
+    description: "This female jewellery set is elegant and perfect for any occasion, adding a touch of sophistication to any outfit."
 
   },
   {
     id:3,
     img: Top3,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"necklace",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:4,
     img: Top4,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Earrings",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:5,
     img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"necklace",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
   {
     id:6,
     img: Top5,
-    title:"Casual Wear",
-    description: "dsejdhjhfadkjfkfra0ejkdn  jajejfdkjelavfe sleipaeai opaemjeifed"
+    title:"Earrings",
+    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
 
   },
 ]
