@@ -1,9 +1,9 @@
 import React from 'react';
-import phone1 from '/src/assets/phone1.jpg';
-import phone2 from '/src/assets/phone2.jpg';
-import phone3 from '/src/assets/phone3.jpg';
-import phone4 from '/src/assets/phone4.jpg';
-import phone5 from '/src/assets/phone5.jpg';
+import laptop1 from '/src/assets/laptop1.jpg';
+import laptop2 from '/src/assets/laptop2.jpg';
+import laptop3 from '/src/assets/laptop3.jpg';
+import laptop4 from '/src/assets/laptop4.jpg';
+import laptop5 from '/src/assets/laptop4.jpg';
 import { FaStar } from 'react-icons/fa6';
 
 
@@ -11,42 +11,42 @@ import { FaStar } from 'react-icons/fa6';
 const ProductsData = [
   {
     id:1,
-    img: phone1,
+    img: laptop1,
     title:"Phone1",
     description: "15k ETB"
 
   },
   {
     id:2,
-    img: phone2,
+    img: laptop2,
     title:"Phone2",
     description: "14k ETB"
 
   },
   {
     id:3,
-    img: phone3,
+    img: laptop3,
     title:"Phone3",
     description: "17k ETB"
 
   },
   {
     id:4,
-    img: phone4,
+    img: laptop4,
     title:"Phone4",
     description: "19k ETB"
 
   },
   {
     id:5,
-    img: phone5,
+    img: laptop4,
     title:"Phone5",
     description: "13k ETB"
 
   },
   {
     id:6,
-    img: phone5,
+    img: laptop5,
     title:"Phone6",
     description: "18k ETB"
 
