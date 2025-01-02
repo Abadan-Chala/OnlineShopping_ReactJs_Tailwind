@@ -12,43 +12,43 @@ const ProductsData = [
   {
     id:1,
     img: phone1,
-    title:"ring",
-    description: "This ring is the top rated product in the market which is very comfortable and stylish to wear."
+    title:"Phone1",
+    description: "15k ETB"
 
   },
   {
     id:2,
     img: phone2,
-    title:"Female jewellery",
-    description: "This female jewellery set is elegant and perfect for any occasion, adding a touch of sophistication to any outfit."
+    title:"Phone2",
+    description: "14k ETB"
 
   },
   {
     id:3,
     img: phone3,
-    title:"necklace",
-    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
+    title:"Phone3",
+    description: "17k ETB"
 
   },
   {
     id:4,
     img: phone4,
-    title:"Earrings",
-    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
+    title:"Phone4",
+    description: "19k ETB"
 
   },
   {
     id:5,
     img: phone5,
-    title:"necklace",
-    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
+    title:"Phone5",
+    description: "13k ETB"
 
   },
   {
     id:6,
     img: phone5,
-    title:"Earrings",
-    description: "this is the top rated product in the market which is very comfortable and stylish to wear."
+    title:"Phone6",
+    description: "18k ETB"
 
   },
 ]
@@ -59,8 +59,8 @@ const Phones = ({handleOrderPopup}) => {
       <div className='container'>
         {/* header Section */}
         <div className='text-center mt-28 mb-10'>
-            <p data-aos="fade-up" className='text-sm text-primary'>Jewellery</p>
-            <h1 data-aos="fade-up" className='text-3xl font-bold'>Original Jewellery</h1>
+            <p data-aos="fade-up" className='text-sm text-primary'>Phones</p>
+            <h1 data-aos="fade-up" className='text-3xl font-bold'>Smart Phones</h1>
             <p data-aos="fade-up" className='text-xs text-gray-400'>Discover our exquisite collection of jewellery, crafted with precision and elegance. Each piece is designed to add a touch of sophistication and style to your look. From rings to necklaces, our jewellery is perfect for any occasion.</p>
         </div>
         {/* body Section */}
