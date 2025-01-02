@@ -1,56 +1,102 @@
 import React from 'react';
+import phone1 from '/src/assets/phone1.jpg';
+import phone2 from '/src/assets/phone2.jpg';
+import phone3 from '/src/assets/phone3.jpg';
+import phone4 from '/src/assets/phone4.jpg';
+import phone5 from '/src/assets/phone5.jpg';
+import { FaStar } from 'react-icons/fa6';
 
-const laptops = [
-    {
-        id: 1,
-        brand: 'Apple',
-        model: 'MacBook Pro',
-        image: 'https://via.placeholder.com/150',
-    },
-    {
-        id: 2,
-        brand: 'Dell',
-        model: 'XPS 13',
-        image: 'https://via.placeholder.com/150',
-    },
-    {
-        id: 3,
-        brand: 'HP',
-        model: 'Spectre x360',
-        image: 'https://via.placeholder.com/150',
-    },
-    {
-        id: 4,
-        brand: 'Lenovo',
-        model: 'ThinkPad X1 Carbon',
-        image: 'https://via.placeholder.com/150',
-    },
-    {
-        id: 5,
-        brand: 'Asus',
-        model: 'ZenBook 14',
-        image: 'https://via.placeholder.com/150',
-    },
-];
 
-const Laptops = () => {
-    return (
-        <div className="container mx-auto p-4">
-            <h1 className="text-3xl font-bold mb-6">Laptops</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {laptops.map((laptop) => (
-                    <div key={laptop.id} className="border rounded-lg p-4 shadow-lg">
-                        <img src={laptop.image} alt={`${laptop.brand} ${laptop.model}`} className="w-full h-48 object-cover mb-4" />
-                        <h2 className="text-xl font-semibold">{laptop.brand}</h2>
-                        <p className="text-gray-700">{laptop.model}</p>
-                        <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
-                            Order
-                        </button>
-                    </div>
-                ))}
-            </div>
+
+const ProductsData = [
+  {
+    id:1,
+    img: phone1,
+    title:"Phone1",
+    description: "15k ETB"
+
+  },
+  {
+    id:2,
+    img: phone2,
+    title:"Phone2",
+    description: "14k ETB"
+
+  },
+  {
+    id:3,
+    img: phone3,
+    title:"Phone3",
+    description: "17k ETB"
+
+  },
+  {
+    id:4,
+    img: phone4,
+    title:"Phone4",
+    description: "19k ETB"
+
+  },
+  {
+    id:5,
+    img: phone5,
+    title:"Phone5",
+    description: "13k ETB"
+
+  },
+  {
+    id:6,
+    img: phone5,
+    title:"Phone6",
+    description: "18k ETB"
+
+  },
+]
+
+const Phones = ({handleOrderPopup}) => {
+  return (
+    <div>
+      <div className='container'>
+        {/* header Section */}
+        <div className='text-center mt-28 mb-10'>
+            <p data-aos="fade-up" className='text-sm text-primary'>Laptops</p>
+            <h1 data-aos="fade-up" className='text-3xl font-bold'>Modern Laptops</h1>
+            <p data-aos="fade-up" className='text-xs text-gray-400'> Discover our collection of modern laptops that combine performance and style. Whether you're working, gaming, or streaming, our laptops are designed to meet all your needs with the latest technology and sleek designs.</p>
         </div>
-    );
-};
+        {/* body Section */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
+          {ProductsData.map((data) =>(
+            <div className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]'>
+              {/* image section */}
+              <div className='h-[100px]'>
+                <img src={data.img} alt="" 
+                data-aos="zoom-in"
+                className='max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md'/>
+              </div>
+              {/* details section */}
+              <div className='p-4 text-center'>
+                {/* star rating */}
+                <div className='w-full flex items-center justify-center gap-1'>
+                  <FaStar className='text-yellow-500'/>
+                  <FaStar className='text-yellow-500'/>
+                  <FaStar className='text-yellow-500'/>
+                  <FaStar className='text-yellow-500'/>
+                </div>
+                <h1 className='text-xl font-bold'>{data.title}</h1>
+                <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
+                <button
+                  className='bg-primary hover:scale-105 duration-300 text-white py-1 px-2 rounded-full mt-4 group-hover:bg-white group-hover:text-primary'
+                  onClick={handleOrderPopup}
+                  >
+                    Order Now
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+} 
 
-export default Laptops;
+export default Phones;

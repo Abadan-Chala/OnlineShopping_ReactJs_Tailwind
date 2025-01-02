@@ -61,7 +61,8 @@ const Phones = ({handleOrderPopup}) => {
         <div className='text-center mt-28 mb-10'>
             <p data-aos="fade-up" className='text-sm text-primary'>Phones</p>
             <h1 data-aos="fade-up" className='text-3xl font-bold'>Smart Phones</h1>
-            <p data-aos="fade-up" className='text-xs text-gray-400'>Discover our exquisite collection of jewellery, crafted with precision and elegance. Each piece is designed to add a touch of sophistication and style to your look. From rings to necklaces, our jewellery is perfect for any occasion.</p>
+            <p data-aos="fade-up" className='text-xs text-gray-400'> Explore the latest smartphones with cutting-edge technology, sleek designs, and powerful performance. Whether you're looking for high-resolution cameras, long-lasting batteries, or fast processors, our collection has something for everyone. Upgrade your mobile experience with our top-of-the-line smartphones.</p>
+       
         </div>
         {/* body Section */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
