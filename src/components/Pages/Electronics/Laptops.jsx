@@ -12,43 +12,43 @@ const ProductsData = [
   {
     id:1,
     img: laptop1,
-    title:"Phone1",
-    description: "15k ETB"
+    title:"Laptop1",
+    description: "35k ETB"
 
   },
   {
     id:2,
     img: laptop2,
-    title:"Phone2",
-    description: "14k ETB"
+    title:"Laptop2",
+    description: "44k ETB"
 
   },
   {
     id:3,
     img: laptop3,
-    title:"Phone3",
-    description: "17k ETB"
+    title:"Laptop3",
+    description: "47k ETB"
 
   },
   {
     id:4,
     img: laptop4,
-    title:"Phone4",
-    description: "19k ETB"
+    title:"Laptop4",
+    description: "39k ETB"
 
   },
   {
     id:5,
     img: laptop4,
-    title:"Phone5",
-    description: "13k ETB"
+    title:"Laptop5",
+    description: "33k ETB"
 
   },
   {
     id:6,
     img: laptop5,
-    title:"Phone6",
-    description: "18k ETB"
+    title:"Laptop6",
+    description: "38k ETB"
 
   },
 ]
